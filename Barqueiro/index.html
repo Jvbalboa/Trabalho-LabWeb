@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Trabalho 2 - LabWeb</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+		<!-- <embed src="mp3/tema.mp3" id='mp3'  style="display: inherit; visibility: hidden; height: 4px;" loop="true" autostart="TRUE"> --><!--  música desligada enquanto for testando -->
+		<div class="titulo">
+			Jogo do barqueiro!
+		</div>
+		<div class="space"></div>
+		<div class="caixa">
+		<div class="legenda">Selecione o que quer levar e clique no barqueiro para levar o barco para o outro lado.</div>
+		<div class="workpoint-1"><br>
+		<input type="button" value="Iniciar!" id="botao" name="botao" />
+		<p>Tempo:</p>
+		<span id="hora">00</span>:<span id="minuto">00</span>:<span id="segundo">00</span>
+		<div class="regra"><p>Regras:</p>
+		<p>1-A galinha não pode ficar com o milho sozinha!</p>
+		<p>2-A raposa não pode ficar sozinha com a galinha!</p>
+		<p>3-Se errar nas regras anteriores vai resetar tudo e o problema é seu!</p>
+		<p>4-Leve apenas o barqueiro e mais um por vez, o barco é pequeno!</p>
+		<p>5-Leve todos para o outro lado!</p>
+		</div>
+		<div class="alunos">
+				<h1>Integrantes:</h1>
+					<p>Nome: Ivanylson Honório Gonçalves<br>
+					Email cadastrado no siga: ivanylson_jf@hotmail.com<br>
+					Matrícula: 201776002</p>
+					<p>Nome: João Victor Dutra Balboa<br>
+					Email cadastrado no siga: victorbalboa1@hotmail.com<br>
+					Matrícula: 201776035</p>
+					<p>Nome: Marcus Vinicius Vasconcelos De Almeida Cunha<br>
+					Email cadastrado no siga: marcusvsc1@hotmail.com<br>
+					Matrícula: 201776013</p>
+			</div>
+		<!--  -->
+		</div>
+
+		<div class="workpoint-2">
+			<div class="boxPunch">
+				<div class="box" id="raposa1"> <div class="ok" id="okR1"><img src="img/ok.png" height="1%" width="55px;"></div><img src="img/raposa.jpg" id="raposaA" class="largura-cheia"></div>
+				<div class="box" id="galinha1"> <div class="ok" id="okG1"><img src="img/ok.png" height="55px" width="55px;"></div><img src="img/galinha.jpg" id="galinhaA" class="largura-cheia"></div>
+				<div class="box" id="milho1"> <div class="ok" id="okM1"><img src="img/ok.png" height="55px" width="55px;"></div><img src="img/milho.jpg" id="milhoA" class="largura-cheia"></div>
+			</div>
+			<div class="boxPunch2">
+				<div class="extra"><div class="extra2"></div><div class="peixe" id="peixe" style="left:0px"><img src="img/fish.png" height="18px" width="20px;"></div></div>
+				<div class="barco" id='barco'><img src="img/barco.jpg" class="largura-cheia"></div>
+			</div>
+			<div class="boxPunch">
+				<div class="box2" id="raposa2"><div class="ok" id="okR2"><img src="img/ok.png" height="55px" width="55px;"></div><img src="img/raposa.jpg" id="raposaB" style="display:none;" class="largura-cheia"></div>
+				<div class="box2" id="galinha2"><div class="ok" id="okG2"><img src="img/ok.png" height="55px" width="55px;"></div><img src="img/galinha.jpg" id="galinhaB" style="display:none;" class="largura-cheia"></div>
+				<div class="box2" id="milho2"><div class="ok" id="okM2"><img src="img/ok.png" height="55px" width="55px;"></div><img src="img/milho.jpg" id="milhoB" style="display:none;" class="largura-cheia"></div>
+			</div>
+
+		</div>
+
+
+		<div class="workpoint-1"><p>
+			Melhor performance:
+			<div class="best" id="best" style="border-style: none;" >0 movimentos</div>
+			<br>Movimentos:<p><div class="move" id="move">0</div></p>
+			</p>
+			<div class="tabela"><table>
+				<caption>
+					Resultados anteriores
+					<details>
+						<summary>Saiba mais</summary>
+						<p>Mostra todos os resultados das execuções vencedoras por ordem de execução</p>
+					</details>
+				</caption>
+				<thead>
+					<tr>
+						<th>Execução</th>
+						<th>Movimentos</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table></div>
+		</div>
+
+		<script src="js/main.js"></script>
+
+
+
+</body>
+</html>
